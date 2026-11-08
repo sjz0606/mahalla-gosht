@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahalla by Gōsht: cho‘g‘da pishgan burgerlar, Toshkent</title>
+<meta name="description" content="Josper grilda, 100% go‘shtdan burgerlar. Alisher Navoiy teatri, Riviera, Central Park va Ekobozor Beruniy. Yetkazib berish Telegram bot orqali.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#d60f0a">
+<meta property="og:title" content="Mahalla by Gōsht">
+<meta property="og:description" content="Cho‘g‘da pishgan burgerlar, 100% go‘sht. Toshkent.">
+<meta property="og:image" content="media/og.jpg">
+<link rel="icon" href="media/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#menu" data-i18n="skip">Menyuga o‘tish</a>
+
+<header class="nav" data-nav>
+  <div class="container nav__in">
+    <a class="nav__brand" href="#top" aria-label="Mahalla by Gōsht, bosh sahifa">
+      <img src="media/logo.jpg" alt="" width="44" height="44">
+      <span>Mahalla <small>by Gōsht</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Asosiy">
+      <a href="#menu" data-i18n="nav.menu">Menyu</a>
+      <a href="#places" data-i18n="nav.places">Filiallar</a>
+      <a href="#delivery" data-i18n="nav.delivery">Yetkazib berish</a>
+    </nav>
+    <div class="nav__end">
+      <div class="lang" role="group" aria-label="Til">
+        <button type="button" data-lang="uz" aria-pressed="true">UZ</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="btn btn--light" href="https://t.me/gosht_mahalla_bot" target="_blank" rel="noopener" data-i18n="cta.order">Buyurtma berish</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero on-red" aria-labelledby="hero-title">
+    <div class="container hero__in">
+      <div class="hero__text">
+        <h1 id="hero-title" class="display" data-i18n="hero.title">Cho‘g‘da pishgan. 100% go‘sht.</h1>
+        <p class="lead" data-i18n="hero.lead">Josper grilda tayyorlangan burgerlar, Toshkentning to‘rt manzilida.</p>
+        <div class="actions">
+          <a class="btn btn--light btn--lg" href="https://t.me/gosht_mahalla_bot" target="_blank" rel="noopener" data-i18n="cta.order">Buyurtma berish</a>
+          <a class="link" href="#menu" data-i18n="cta.menu">Menyuni ko‘rish</a>
+        </div>
+        <p class="hero__status" data-now aria-live="polite"></p>
+      </div>
+      <div class="hero__reels">
+        <video class="hero__v hero__v--a" muted loop playsinline autoplay preload="auto" poster="media/h-burger.jpg" data-autoplay aria-label="Burger, josperdan endigina chiqqan"><source src="media/h-burger.mp4" type="video/mp4"></video>
+        <video class="hero__v hero__v--b" muted loop playsinline preload="metadata" poster="media/h-counter.jpg" data-autoplay aria-label="Oshpaz buyurtmani beryapti"><source src="media/h-counter.mp4" type="video/mp4"></video>
+        <video class="hero__v hero__v--c" muted loop playsinline preload="metadata" poster="media/h-set.jpg" data-autoplay aria-label="Burger, kartoshka fri va ichimlik, firma paketida"><source src="media/h-set.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="picks on-red" aria-labelledby="picks-title">
+    <div class="container">
+      <h2 id="picks-title" class="section-title" data-i18n="pk.title">Tatib ko‘rishni tavsiya qilamiz</h2>
+      <ul class="picks__grid">
+        <li class="pick">
+          <img src="media/p-blacklamb.jpg" alt="«Qora qo‘zichoq» burgeri, qora bulochkada" width="640" height="1136" loading="lazy">
+          <div class="pick__body">
+            <h3 data-i18n="d.blacklamb">Qora qo‘zichoq</h3>
+            <p data-i18n="pk.blacklamb">Shirali kotlet, yumshoq bulochka, maxsus sous va oshpazlarimiz mahorati.</p>
+            <b>77 000</b>
+          </div>
+        </li>
+        <li class="pick">
+          <img src="media/p-steak.jpg" alt="Bir marta tatib ko‘ring, kartoshka fri bilan" width="640" height="1136" loading="lazy">
+          <div class="pick__body">
+            <h3 data-i18n="d.steakburger">Bir marta tatib ko‘ring</h3>
+            <p data-i18n="pk.steak">To‘yingan ta’mni yaxshi ko‘radiganlar uchun: mayin go‘sht, ehtiyotkorlik bilan tayyorlangan.</p>
+            <b>75 000</b>
+          </div>
+        </li>
+        <li class="pick">
+          <img src="media/p-hotdog.jpg" alt="Har bir luqmada lazzat, koreyscha sabzi bilan" width="640" height="1136" loading="lazy">
+          <div class="pick__body">
+            <h3 data-i18n="d.hdmahalla">Har bir luqmada lazzat</h3>
+            <p data-i18n="pk.hotdog">Rad etib bo‘lmaydigan ta’m.</p>
+            <b>33 000</b>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="menu" class="menu on-white" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="menu__head">
+        <h2 id="menu-title" class="section-title" data-i18n="menu.title">Menyu</h2>
+        <div class="tabs" role="tablist" aria-label="Menyu bo‘limlari">
+          <button role="tab" id="tab-burgers" aria-controls="panel-burgers" aria-selected="true" data-i18n="menu.burgers">Burgerlar</button>
+          <button role="tab" id="tab-rolls" aria-controls="panel-rolls" aria-selected="false" tabindex="-1" data-i18n="menu.rolls">Rollar va hot-doglar</button>
+          <button role="tab" id="tab-snacks" aria-controls="panel-snacks" aria-selected="false" tabindex="-1" data-i18n="menu.snacks">Sneklar</button>
+        </div>
+      </div>
+
+      <div class="menu__body">
+        <figure class="menu__photo">
+          <img data-menu-photo src="media/burger-hand.jpg" alt="Mahalla by Gōsht burgeri, qo‘lda" width="720" height="1280" loading="lazy">
+          <figcaption data-menu-caption data-i18n="menu.cap.burgers">Har bir burger alohida e’tiborga loyiq.</figcaption>
+        </figure>
+
+        <div class="menu__panels">
+          <div role="tabpanel" id="panel-burgers" aria-labelledby="tab-burgers" data-photo="media/burger-hand.jpg" data-cap="menu.cap.burgers">
+            <ul class="dishes">
+              <li><span data-i18n="d.blacklamb">Qora qo‘zichoq</span><b>77 000</b></li>
+              <li><span data-i18n="d.silence">Qo‘zichoqlar sukunati</span><b>77 000</b></li>
+              <li><span data-i18n="d.steak">Steyk</span><b>75 000</b></li>
+              <li><span data-i18n="d.gosht">Gōsht</span><b>68 000</b></li>
+              <li><span data-i18n="d.classiccheese">Klassik pishloqli</span><b>63 000</b></li>
+              <li><span data-i18n="d.mahalla">Mahalla</span><b>62 000</b></li>
+              <li><span data-i18n="d.bbq">Barbekyu</span><b>62 000</b></li>
+              <li><span data-i18n="d.classic">Klassik</span><b>60 000</b></li>
+              <li><span data-i18n="d.beshanja">Beshanja</span><b>55 000</b></li>
+              <li><span data-i18n="d.hotchick">Achchiq jo‘ja</span><b>50 000</b></li>
+              <li><span data-i18n="d.juja">Jo‘ja</span><b>45 000</b></li>
+              <li><span data-i18n="d.junior">Junior</span><b>40 000</b></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="panel-rolls" aria-labelledby="tab-rolls" hidden data-photo="media/hotdog.jpg" data-cap="menu.cap.rolls">
+            <ul class="dishes">
+              <li><span data-i18n="d.rollgosht">Gōsht roll</span><b>61 000</b></li>
+              <li><span data-i18n="d.rolljuja">Jo‘ja roll</span><b>49 000</b></li>
+              <li><span data-i18n="d.hdmahalla">Har bir luqmada lazzat</span><b>33 000</b></li>
+              <li><span data-i18n="d.hdclassic">Klassik hot-dog</span><b>33 000</b></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="panel-snacks" aria-labelledby="tab-snacks" hidden data-photo="media/snacks.jpg" data-cap="menu.cap.snacks">
+            <ul class="dishes">
+              <li><span data-i18n="d.chuchvara">Mahalla chuchvarasi</span><b>55 000</b></li>
+              <li><span data-i18n="d.nuggets">Tovuq naggetslari</span><b>23 000</b></li>
+              <li><span data-i18n="d.fries">Kartoshka fri</span><b>23 000</b></li>
+            </ul>
+          </div>
+          <p class="menu__note" data-i18n="menu.note">Narxlar so‘mda, Instagram’dagi menyudan olingan. Aniq narxni filialda yoki botda tekshiring.</p>
+          <a class="btn btn--red" href="https://t.me/gosht_mahalla_bot" target="_blank" rel="noopener" data-i18n="cta.orderbot">Botda buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kitchen on-coal" aria-labelledby="kitchen-title">
+    <div class="container">
+      <div class="kitchen__head">
+        <h2 id="kitchen-title" class="section-title" data-i18n="k.title">Oshxonada va zalda</h2>
+        <p data-i18n="k.lead">Eng qiziqarli lahzalar har doim oshxonada yuz beradi.</p>
+        <p class="kitchen__hint" data-i18n="k.hint">Aylantirish uchun torting</p>
+      </div>
+    </div>
+    <div class="reels" data-reels tabindex="0" aria-label="Videolar: aylantirish uchun torting yoki strelkalarni bosing">
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-guest.jpg" data-autoplay aria-label="Mehmonlarimiz"><source src="media/r-guest.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r1">Mehmonlarimiz</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-table.jpg" data-autoplay aria-label="Tushlik vaqti"><source src="media/r-table.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r2">Tushlik vaqti</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-blacklamb.jpg" data-autoplay aria-label="«Qora qo‘zichoq»"><source src="media/r-blacklamb.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r3">«Qora qo‘zichoq»</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-hand.jpg" data-autoplay aria-label="Har bir luqmada lazzat"><source src="media/r-hand.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r4">Har bir luqmada lazzat</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-once.jpg" data-autoplay aria-label="Bir marta tatib ko‘ring"><source src="media/r-once.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r5">Bir marta tatib ko‘ring</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-nuggets.jpg" data-autoplay aria-label="Naggetslar, firma qutisida"><source src="media/r-nuggets.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r6">Naggetslar, firma qutisida</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-hotdog-hand.jpg" data-autoplay aria-label="Mahalla hot-dogi, qo‘lda"><source src="media/r-hotdog-hand.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r7">Mahalla hot-dogi, qo‘lda</figcaption>
+      </figure>
+      <figure class="reel">
+        <div class="reel__media">
+          <video muted loop playsinline preload="none" poster="media/r-fest.jpg" data-autoplay aria-label="Milliy Fest, Milliy bog‘"><source src="media/r-fest.mp4" type="video/mp4"></video>
+          <button class="reel__sound" type="button" data-sound aria-pressed="false" aria-label="Ovoz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></button>
+        </div>
+        <figcaption data-i18n="k.r8">Milliy Fest, Milliy bog‘</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="fests on-red" aria-labelledby="fests-title">
+    <div class="container fests__in">
+      <figure class="fests__photo">
+        <img src="media/truck.jpg" alt="Gōsht furgoni kechki chiroqlarda, Teplo Fest" width="900" height="1125" loading="lazy">
+      </figure>
+      <div class="fests__list">
+        <h2 id="fests-title" class="section-title" data-i18n="f.title">Shahar bayramlarida: qizil furgon</h2>
+        <ol class="events">
+          <li><time datetime="2026-10-21">21-23.10</time><span>Motorfest</span><small>CAEx</small></li>
+          <li><time datetime="2026-09-04">4-6.09</time><span>Teplo Fest</span><small data-i18n="f.japan">Yapon bog‘i</small></li>
+          <li><time datetime="2026-09" data-i18n="f.sep">sentabr</time><span>Bloom Beauty Fest</span><small></small></li>
+          <li><time datetime="2026-05-31">31.05</time><span>Mazza Fest</span><small>UzExpo Centre</small></li>
+          <li><time datetime="2026-05-29">29-31.05</time><span>Motorfest</span><small>CAEx</small></li>
+          <li><time datetime="2026-03" data-i18n="f.mar">mart</time><span>Milliy Fest</span><small data-i18n="f.milliy">Milliy bog‘</small></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="places" class="places on-white" aria-labelledby="places-title">
+    <div class="container">
+      <h2 id="places-title" class="section-title" data-i18n="p.title">To‘rt manzil</h2>
+      <ul class="places__list" data-places>
+        <li data-open="10:00" data-close="02:00">
+          <h3 data-i18n="p.navoi">Alisher Navoiy nomidagi teatr</h3>
+          <p class="places__hours"><span>10:00-02:00</span> <em data-status></em></p>
+          <p class="places__links"><a href="tel:+998999618800">+998 99 961 88 00</a> <a href="https://yandex.uz/maps/?text=Mahalla%20by%20Gosht%20Navoi%20teatri%20Toshkent" target="_blank" rel="noopener" data-i18n="p.map">Xaritada</a></p>
+        </li>
+        <li data-open="10:00" data-close="22:00">
+          <h3 data-i18n="p.riviera">«Riviera» savdo markazi</h3>
+          <p class="places__hours"><span>10:00-22:00</span> <em data-status></em></p>
+          <p class="places__links"><a href="tel:+998335308800">+998 33 530 88 00</a> <a href="https://yandex.uz/maps/?text=Mahalla%20by%20Gosht%20Riviera%20Toshkent" target="_blank" rel="noopener" data-i18n="p.map">Xaritada</a></p>
+        </li>
+        <li data-open="11:00" data-close="23:00">
+          <h3>Central Park</h3>
+          <p class="places__sub" data-i18n="p.cp">Mahatma Gandi ko‘chasi, Telman bog‘i</p>
+          <p class="places__hours"><span>11:00-23:00</span> <em data-status></em></p>
+          <p class="places__links"><a href="tel:+998996908800">+998 99 690 88 00</a> <a href="https://yandex.uz/maps/?text=Mahalla%20by%20Gosht%20Central%20Park%20Toshkent" target="_blank" rel="noopener" data-i18n="p.map">Xaritada</a></p>
+        </li>
+        <li>
+          <h3 data-i18n="p.eco">Ekobozor Beruniy</h3>
+          <p class="places__hours"><span data-i18n="p.ask">Ish vaqtini Instagram’da so‘rang</span></p>
+          <p class="places__links"><a href="https://ig.me/m/mahalla_by_gosht" target="_blank" rel="noopener" data-i18n="p.write">Yozish</a> <a href="https://yandex.uz/maps/?text=Ekobozor%20Beruniy%20Toshkent" target="_blank" rel="noopener" data-i18n="p.map">Xaritada</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="delivery" class="delivery on-red" aria-labelledby="delivery-title">
+    <div class="container delivery__in">
+      <div class="delivery__main">
+        <h2 id="delivery-title" class="section-title" data-i18n="dl.title">Uyga, ofisga, tadbirga</h2>
+        <p class="lead" data-i18n="dl.lead">Telegram bot orqali buyurtma bering, yoki Yandex Eats va Uzum Tezkor ilovalarida toping.</p>
+        <a class="btn btn--light btn--lg" href="https://t.me/gosht_mahalla_bot" target="_blank" rel="noopener">@gosht_mahalla_bot</a>
+      </div>
+      <div class="delivery__catering">
+        <video class="catering__video" muted loop playsinline preload="none" poster="media/catering.jpg" data-autoplay aria-label="Katering: Mahalla by Gōsht tadbirda">
+          <source src="media/catering.mp4" type="video/mp4">
+        </video>
+        <div>
+          <h3 data-i18n="c.title">Katering</h3>
+          <p data-i18n="c.text">Tug‘ilgan kun, ofis bayrami yoki festival: burgerlarni joyida tayyorlaymiz.</p>
+          <a class="link" href="https://ig.me/m/mahalla_by_gosht" target="_blank" rel="noopener" data-i18n="c.cta">Instagram’da kelishish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-coal">
+  <div class="container foot__in">
+    <div class="foot__brand">
+      <img src="media/logo.jpg" alt="Mahalla by Gōsht logotipi" width="96" height="96" loading="lazy">
+      <p data-i18n="ft.group">Gōsht Group oilasidan. 2017 yildan beri.</p>
+    </div>
+    <ul class="foot__links">
+      <li><a href="https://www.instagram.com/mahalla_by_gosht/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://t.me/gosht_mahalla_bot" target="_blank" rel="noopener">Telegram bot</a></li>
+      <li><a href="#menu" data-i18n="nav.menu">Menyu</a></li>
+      <li><a href="#places" data-i18n="nav.places">Filiallar</a></li>
+    </ul>
+    <p class="foot__note" data-i18n="ft.note">Konsept sayt. Suratlar, videolar va narxlar @mahalla_by_gosht Instagram sahifasidan.</p>
+  </div>
+</footer>
+
+<script src="js/fx3d.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
